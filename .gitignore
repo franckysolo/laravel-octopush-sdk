@@ -1,4 +1,3 @@
 /config/octopush-testing.php
 /vendor
 /logs
-composer.lock
