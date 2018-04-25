@@ -41,6 +41,6 @@ class OctopushServiceProvider extends ServiceProvider
         $configPath = __DIR__ . '/../../config/octopush.php';
         $this->publishes([
           $configPath => config_path('octopush.php'),
-        ]);
+        ], 'config');
     }
 }
