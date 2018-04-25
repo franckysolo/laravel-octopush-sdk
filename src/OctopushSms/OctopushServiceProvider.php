@@ -27,7 +27,9 @@ class OctopushServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($configPath, 'octopush');
         // Singleton
         $this->app->singleton('octopush', function ($app) {
-            return new SmsApi(SMS_API_LOGIN, SMS_API_KEY);
+            $login = $app['config']['octopush']['login'];
+            $key = $app['config']['octopush']['api_key'];
+            return new SmsApi($login, $key);
         });
     }
 

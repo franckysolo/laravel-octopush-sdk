@@ -12,8 +12,10 @@ abstract class TestCase extends BaseTestCase
     protected function setUp()
     {
         parent::setUp();
+        $this->app['config']->set('octopush.login', SMS_API_LOGIN);
+        $this->app['config']->set('octopush.api_key', SMS_API_KEY);
     }
-
+    
     /**
      * Get package providers.
      *
