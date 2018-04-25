@@ -106,6 +106,7 @@ $api->sendMessage($message, [
   'sms_fields_2' => ['08:00 am', '01:00 pm'],
   'sms_fields_3' => ['2018/05/21', '2018/05/22'],
 ]);
+?>
 <pre>
 <?php echo var_dump($api->getResponse());?>
 </pre>
