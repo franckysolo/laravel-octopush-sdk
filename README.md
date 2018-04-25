@@ -5,6 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/v/unstable)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
 [![License](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/license)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
 [![composer.lock](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/composerlock)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
+
 Laravel Service Provider Octopush SDK for [Octopush](http://www.octopush.com/) API SMS
 
 
