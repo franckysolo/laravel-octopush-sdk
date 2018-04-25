@@ -1,11 +1,10 @@
 # Laravel Octopush Sdk
 
-[![Latest Stable Version](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/version)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
+[![Latest Stable Version](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/v/stable)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
 [![Total Downloads](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/downloads)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
-[![Latest Unstable Version](https://poser.pugx.org/laravel-franckysolo/octopush-sdk/v/unstable)](//packagist.org/packages/franckysolo/laravel-octopush-sdk)
+[![Latest Unstable Version](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/v/unstable)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
 [![License](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/license)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
-[![composer.lock available](https://poser.pugx.org/laravel-franckysolo/octopush-sdk/composerlock)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
-
+[![composer.lock](https://poser.pugx.org/franckysolo/laravel-octopush-sdk/composerlock)](https://packagist.org/packages/franckysolo/laravel-octopush-sdk)
 Laravel Service Provider Octopush SDK for [Octopush](http://www.octopush.com/) API SMS
 
 
