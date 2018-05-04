@@ -55,9 +55,21 @@ class ApiTest extends TestCase
      * @param  \Octopush\Api    $octopush
      * @return \Octopush\Api
      */
-    public function testGetBalancePremium(Api $octopush)
+    public function testGetBalance(Api $octopush)
     {
-        $this->assertGreaterThan(0, $octopush->getBalance(false));
+        $this->assertCount(2, $octopush->getBalance());
+    }
+
+
+    /**
+     * @test
+     * @depends testInvokeServiceOctopush
+     * @param  \Octopush\Api    $octopush
+     * @return \Octopush\Api
+     */
+    public function testGetPremiumBalance(Api $octopush)
+    {
+        $this->assertGreaterThan(0, $octopush->getPremiumBalance());
     }
 
     /**
@@ -66,9 +78,9 @@ class ApiTest extends TestCase
      * @param  \Octopush\Api    $octopush
      * @return \Octopush\Api
      */
-    public function testGetBalanceStandard(Api $octopush)
+    public function testGetLowCostBalance(Api $octopush)
     {
-        $this->assertGreaterThan(0, $octopush->getBalance());
+        $this->assertGreaterThan(0, $octopush->getLowCostBalance());
     }
 
     /**
@@ -79,7 +91,7 @@ class ApiTest extends TestCase
      */
     public function testCompareBalances(Api $octopush)
     {
-        $this->assertGreaterThan($octopush->getBalance(false), $octopush->getBalance());
+        $this->assertGreaterThan($octopush->getPremiumBalance(), $octopush->getLowCostBalance());
     }
 
 
@@ -111,7 +123,7 @@ class ApiTest extends TestCase
      * @test
      * @depends testSendSimpleMessage
      * @param  array $response
-     * @return \Octopush\Api
+     * @return void
      */
     public function testResponseSimpleMessage($response)
     {
