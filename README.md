@@ -55,10 +55,13 @@ Remaining Credit :  <?php echo $credit;?> &euro;
 <?php
 ...
 $api = $this->app->make('octopush');
-$low = $api->getBalance();
-$premium = $api->getBalance(false);
+$balance = $api->getBalance();
+$premium = $api->getPremiumBalance();
+$low = $api->getLowCostBalance();
 ?>
 <pre>
+  <?php var_dump(balance);?>
+
   Remaining Sms Low cost :  <?php echo $low;?>
 
   Remaining Sms Premium :  <?php echo $premium;?>
